@@ -1,0 +1,8 @@
+
+services:
+  - type: web
+    name: dalva-api
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn fastapi_dalva_app:app --host 0.0.0.0 --port 8000
+    plan: free
